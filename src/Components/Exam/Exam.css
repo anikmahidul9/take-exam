@@ -1,0 +1,15 @@
+Alert:hover{
+    background-color: blue;
+}
+.font{
+    display: flex;
+    justify-content: space-between;
+}
+.content{
+    color: azure;
+    
+}
+.Form.Check {
+    border: 1px solid white;
+  }
+  

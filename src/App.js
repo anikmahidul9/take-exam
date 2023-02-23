@@ -4,6 +4,7 @@ import './App.css';
 import About from './Components/About/About';
 import Blog from './Components/Blog/Blog';
 import ErrorPage from './Components/ErrorPage/ErrorPage';
+import Exam from './Components/Exam/Exam';
 import Home from './Components/Home/Home';
 import Main from './layout/Main'
 
@@ -26,6 +27,10 @@ function App() {
         {
           path:'/blog',
           element:<Blog></Blog>
+        },
+        {
+          path:'/:id',
+          element:<Exam></Exam>
         }
       ]
     }

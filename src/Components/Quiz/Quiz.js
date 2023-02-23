@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Card } from 'react-bootstrap';
-import { useLoaderData } from 'react-router-dom';
+import { NavLink, useLoaderData } from 'react-router-dom';
 import './Quiz.css'
 
 const Quiz = ({sub}) => {
-        const {name,logo,total} = sub;
+        const {name,logo,total,id} = sub;
+
     return (
         <div>
         <Card style={{ width: '18rem' }}>
@@ -15,7 +16,10 @@ const Quiz = ({sub}) => {
           Some quick example text to build on the card title and make up the
           bulk of the card's content.
         </Card.Text>
-        <Button variant="primary">Take Exam</Button>
+        <NavLink to={"/"+id }>
+
+          <Button variant="primary">Take Exam</Button>
+        </NavLink>
       </Card.Body>
     </Card>
         </div>
